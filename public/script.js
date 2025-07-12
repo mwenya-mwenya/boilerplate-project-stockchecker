@@ -6,6 +6,7 @@ document.getElementById('testForm2').addEventListener('submit', e => {
     .then(res => res.json())
     .then(data => {
       document.getElementById('jsonResult').innerText = JSON.stringify(data);
+      console.log(data)
     });
 });
 
